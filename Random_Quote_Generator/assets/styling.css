@@ -1,5 +1,5 @@
 * {
-  font-family: arial;
+    font-family: arial;
 }
 
 body {
@@ -14,10 +14,10 @@ body {
 .container {
     flex: 1 0 auto;
     padding: 2em;
-    margin: 1em;
+    margin: 5em;
     list-style: none;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
 }
@@ -28,6 +28,10 @@ body {
     width: 500px;
     margin: 10px 10px;
     border-radius: 8px;
+}
+
+img {
+    justify-content: center;
 }
 
 .quote {
@@ -45,20 +49,24 @@ body {
     text-align: right;
 }
 .quoteButton button {
-  margin: 1em;
-  padding: 10px 20px;
-  border-style: none;
-  border-width: 0;
-  border-radius: 4px;
-  background-color: turquoise;
-  color: white;
-  font-size: 1em;
+    margin: 1em;
+    padding: 10px 20px;
+    border-style: none;
+    border-width: 0;
+    border-radius: 4px;
+    background-color: turquoise;
+    color: white;
+    font-size: 1em;
+}
+
+button:focus {
+    outline:0;
 }
 
 .quoteButton button:hover,
 .quoteButton button:active {
-  background-color: darkTurquoise;
-  border-style: none;
+    background-color: darkTurquoise;
+    border-style: none;
 }
 
 .site-author {

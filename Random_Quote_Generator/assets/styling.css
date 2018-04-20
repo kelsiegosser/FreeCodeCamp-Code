@@ -8,6 +8,7 @@ body {
     min-height: 100vh;
     width: 100vw;
     margin: 0;
+    /* background: linear-gradient(#e6ffff, #66ffff); */
 }
 
 .container {
@@ -18,24 +19,30 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .item {
     background: whitesmoke;
     border: 1px solid lightgrey;
-    width: 350px;
+    width: 500px;
     margin: 10px 10px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
 }
 
 .quote {
-  padding: 2em;
-  text-align: center;
+    padding: 2em;
+    text-align: center;
+    font-size: 24px;
+}
+
+.quote cite {
+    font-size: 16px;
 }
 
 .quoteButton {
-  text-align: right;
+    align-self: flex-end;
+    text-align: right;
 }
 .quoteButton button {
   margin: 1em;
@@ -52,4 +59,8 @@ body {
 .quoteButton button:active {
   background-color: darkTurquoise;
   border-style: none;
+}
+
+.site-author {
+    font-size: 12px;
 }

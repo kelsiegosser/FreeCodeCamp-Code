@@ -1,0 +1,114 @@
+/*****************************/
+/**********Main***************/
+/*****************************/
+
+* {
+    font-family: arial;
+}
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background: linear-gradient(#000099, #111111);
+}
+img {
+    justify-content: center;
+}
+
+/*Container*/
+.container {
+    flex: 1 0 auto;
+    padding: 2em;
+    margin: 5em;
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Items within container*/
+.item {
+    /* background: whitesmoke; */
+    border-top: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+    width: 500px;
+    margin: 10px 10px;
+}
+
+/*****************************/
+/*********Quote***************/
+/*****************************/
+
+.quote {
+    padding: 1em 2em;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+.quote cite {
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+/*****************************/
+/*******Links Section*********/
+/*****************************/
+
+.linksContainer {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+/*Tweet Link*/
+.twitterLink {
+    flex: 0;
+    text-align: left;
+    width: 50%;
+}
+.tweetIcon {
+    margin: 1.5em 1em 0em 1em;
+    color: #b3b3b3;
+}
+.tweetIcon:hover,
+.tweetIcon:active {
+    color: white;
+}
+
+/*Quote Button*/
+.quoteButton {
+    flex: 1;
+    text-align: right;
+    width: 50%;
+}
+.quoteButton button {
+    margin: 1em;
+    padding: 10px 20px;
+    border-style: none;
+    border-width: 0;
+    border-radius: 4px;
+    background-color: #0000;
+    border: 1px solid #b3b3b3;
+    color: #b3b3b3;
+    font-size: 1em;
+}
+button:focus {
+    outline:0;
+    border: 1px solid #b3b3b3;
+}
+.quoteButton button:hover,
+.quoteButton button:active {
+    color: white;
+    border-color: white;
+}
+
+/*****************************/
+/*******Site Author**********/
+/*****************************/
+
+.site-author {
+    font-size: 12px;
+    color: whitesmoke;
+}

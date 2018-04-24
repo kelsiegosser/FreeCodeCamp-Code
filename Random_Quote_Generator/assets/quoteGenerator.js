@@ -16,11 +16,15 @@ var quoteList=[
   ["Always.", "Severus Snape"]
 ];
 
+
 function randQuote() {
-  var randPicker = Math.floor(Math.random() * (quoteList.length));
-  randQuotePicker = quoteList[randPicker][0];
-  randQuoteAuthor = quoteList[randPicker][1];
-  document.getElementById("quote").innerHTML = randQuotePicker;
-  document.getElementById("quoteAuthor").innerHTML = randQuoteAuthor;
+    var randPicker = Math.floor(Math.random() * (quoteList.length));
+    var randQuotePicker = quoteList[randPicker][0];
+    var randQuoteAuthor = quoteList[randPicker][1];
+    document.getElementById("quote").innerHTML = randQuotePicker;
+    document.getElementById("quoteAuthor").innerHTML = randQuoteAuthor;
 }
 
+window.onload = function(){
+    randQuote();
+}

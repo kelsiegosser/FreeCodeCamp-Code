@@ -8,7 +8,7 @@ var quoteList=[
   ["It takes a great deal of bravery to stand up to our enemies, but just as much to stand up to our friends.", "Albus Dumbledore"],
   ["It is the unknown we fear when we look upon death and darkness, nothing more.", "Albus Dumbledore"],
   ["We could all have been killed - or worse, expelled.", "Hermione Granger"],
-  ["Dobby is free", "Dobby the House Elf"],
+  ["Dobby is free.", "Dobby the House Elf"],
   ["Happiness can be found, even in the darkest of times, if one only remembers to turn on the light.", "Albus Dumbledore"],
   ["It's cruel that I got to spend so much time with James and Lily, and you so little. But know this; the ones that love us never really leave us.", "Sirius Black"],
   ["Working hard is important. But there is something that matters even more: believing in yourself.", "Harry Potter"],
@@ -23,6 +23,9 @@ function randQuote() {
     var randQuoteAuthor = quoteList[randPicker][1];
     document.getElementById("quote").innerHTML = randQuotePicker;
     document.getElementById("quoteAuthor").innerHTML = randQuoteAuthor;
+
+    var tweetLink = "".concat("https://twitter.com/intent/tweet?text=",randQuotePicker," - ",randQuoteAuthor);
+    document.getElementById("tweetText").setAttribute("href",tweetLink);
 }
 
 window.onload = function(){

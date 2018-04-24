@@ -1,16 +1,23 @@
+/*****************************/
+/**********Main***************/
+/*****************************/
+
 * {
     font-family: arial;
 }
-
 body {
     display: flex;
     flex-flow: column nowrap;
     min-height: 100vh;
     width: 100vw;
     margin: 0;
-    /* background: linear-gradient(#e6ffff, #66ffff); */
+    background: linear-gradient(#000099, #111111);
+}
+img {
+    justify-content: center;
 }
 
+/*Container*/
 .container {
     flex: 1 0 auto;
     padding: 2em;
@@ -22,31 +29,59 @@ body {
     align-items: center;
 }
 
+/*Items within container*/
 .item {
-    background: whitesmoke;
-    border: 1px solid lightgrey;
+    /* background: whitesmoke; */
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
     width: 500px;
     margin: 10px 10px;
-    border-radius: 8px;
 }
 
-img {
-    justify-content: center;
-}
+/*****************************/
+/*********Quote***************/
+/*****************************/
 
 .quote {
-    padding: 2em;
+    padding: 2em 2em 1em 2em;
     text-align: center;
     font-size: 24px;
+    color: white;
 }
-
 .quote cite {
     font-size: 16px;
+    color: whitesmoke;
 }
 
+/*****************************/
+/*******Links Section*********/
+/*****************************/
+
+.linksContainer {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+/*Tweet Link*/
+.twitterLink {
+    flex: 0;
+    text-align: left;
+    width: 50%;
+}
+.tweetIcon {
+    margin: 1.5em 1em 0em 1em;
+    color: white;
+}
+.tweetIcon:hover,
+.tweetIcon:active {
+    color: #b3b3b3;
+}
+
+/*Quote Button*/
 .quoteButton {
-    align-self: flex-end;
+    flex: 1;
     text-align: right;
+    width: 50%;
 }
 .quoteButton button {
     margin: 1em;
@@ -54,21 +89,26 @@ img {
     border-style: none;
     border-width: 0;
     border-radius: 4px;
-    background-color: turquoise;
+    background-color: #0000;
+    border: 1px solid white;
     color: white;
     font-size: 1em;
 }
-
 button:focus {
     outline:0;
+    border: 1px solid white;
 }
-
 .quoteButton button:hover,
 .quoteButton button:active {
-    background-color: darkTurquoise;
-    border-style: none;
+    color: #b3b3b3;
+    border-color: #b3b3b3;
 }
+
+/*****************************/
+/*******Site Author**********/
+/*****************************/
 
 .site-author {
     font-size: 12px;
+    color: whitesmoke;
 }

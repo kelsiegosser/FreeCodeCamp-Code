@@ -32,8 +32,8 @@ img {
 /*Items within container*/
 .item {
     /* background: whitesmoke; */
-    border-top: 1px solid lightgrey;
-    border-bottom: 1px solid lightgrey;
+    border-top: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
     width: 500px;
     margin: 10px 10px;
 }
@@ -43,7 +43,7 @@ img {
 /*****************************/
 
 .quote {
-    padding: 2em 2em 1em 2em;
+    padding: 1em 2em;
     text-align: center;
     font-size: 24px;
     color: white;
@@ -70,11 +70,11 @@ img {
 }
 .tweetIcon {
     margin: 1.5em 1em 0em 1em;
-    color: white;
+    color: #b3b3b3;
 }
 .tweetIcon:hover,
 .tweetIcon:active {
-    color: #b3b3b3;
+    color: white;
 }
 
 /*Quote Button*/
@@ -90,18 +90,18 @@ img {
     border-width: 0;
     border-radius: 4px;
     background-color: #0000;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid #b3b3b3;
+    color: #b3b3b3;
     font-size: 1em;
 }
 button:focus {
     outline:0;
-    border: 1px solid white;
+    border: 1px solid #b3b3b3;
 }
 .quoteButton button:hover,
 .quoteButton button:active {
-    color: #b3b3b3;
-    border-color: #b3b3b3;
+    color: white;
+    border-color: white;
 }
 
 /*****************************/

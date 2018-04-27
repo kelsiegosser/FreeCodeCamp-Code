@@ -12,9 +12,48 @@ body {
     width: 100vw;
     margin: 0;
 }
+img {
+    justify-content: center;
+}
+
+/*Container*/
+.container {
+    flex: 1 0 auto;
+    padding: 2em;
+    margin: 5em;
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Items within container*/
+.item {
+    text-align: center;
+    min-width: 300px;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border: 1px solid lightgray;
+}
 
 /*****************************/
-/*******Site Author**********/
+/*******Item Specifics********/
+/*****************************/
+
+.description {
+    font-size: 11pt;
+    text-transform: capitalize;
+}
+
+.tempNum {
+    font-size: 36pt;
+    font-weight: lighter;
+    /* font-family: ; */
+}
+
+/*****************************/
+/*******Site Author***********/
 /*****************************/
 
 .site-author {

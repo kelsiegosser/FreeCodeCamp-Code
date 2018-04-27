@@ -11,12 +11,22 @@
 <body>
     <div class="container">
         <div class="item">
-            <div class="title">Weather App</div>
-            <div class = "weatherInfo">
+            <div class="title">
+                <h1>Weather App</h1>
+            </div>
+            <div class="weatherInfo">
                 <div id="weather-icon"></div>
-                <div id="weather-desc"></div>
-                <div id="temp-num"></div>
-                <div id="location"></div>
+                <div id="weather-desc" class="description"></div>
+                <div class="tempInfo">
+                    <span id="temp-num" class="tempNum"></span>
+                    <span class="tempNum">&deg;</span>
+                    <span id="temp-type">F</span>
+                </div>
+                <div class="locationInfo">
+                    <span id="location"></span>
+                    <span>, </span>
+                    <span id="country"></span>
+                </div>
             </div>
         </div>
         <div class="site-author">

@@ -36,10 +36,32 @@ function updateDataToUI(location, weather, temp, country) {
     cntry.innerHTML = country;
     weatherIcon.innerHTML = `<img src="${weather[0].icon}" />`;
     weatherDesc.innerHTML = weather[0].description;
-    console.log(temp);
-    temperature.innerHTML = `${temp}&deg;C`;
+    temperature.innerHTML = temp.toFixed(1);
 }
+
+// change from C to F
+function CtoF(Celsius) {
+    return Celsius * 9 / 5 + 32;
+}
+// change from F to C
+function FtoC(Fahrenheit) {
+    return (Fahrenheit - 32) * 5 / 9;
+}
+
+function toggleTemp() {
+    if (tempType.innerHTML === "C") {
+        temperature.innerHTML = CtoF(temperature.innerHTML).toFixed(1);
+        tempType.innerHTML = "F";
+    } else if (tempType.innerHTML === "F") {
+        temperature.innerHTML = FtoC(temperature.innerHTML).toFixed(1);
+        tempType.innerHTML = "C";
+    }
+}
+
+// toggle the temperature scale
+tempType.addEventListener("click", toggleTemp);
 
 window.onload = function() {
     getLocation();
+    toggleTemp();
 };

@@ -51,8 +51,7 @@ function toggleTemp() {
 
 // update the data from API
 function updateDataToUI(location, weather, temp, country) {
-    loc.innerHTML = location;
-    cntry.innerHTML = country;
+    loc.innerHTML = location.trim() + ', ' + country.trim();
     weatherIcon.innerHTML = `<img src="${weather[0].icon}" />`;
     weatherDesc.innerHTML = weather[0].description;
     temperature.innerHTML = (temp * 9 / 5 + 32).toFixed(1);

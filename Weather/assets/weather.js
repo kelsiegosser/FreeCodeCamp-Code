@@ -30,15 +30,6 @@ function getWeather(lat, long) {
     .catch(error => console.error('Error:', error))
 }
 
-// update the data from API
-function updateDataToUI(location, weather, temp, country) {
-    loc.innerHTML = location;
-    cntry.innerHTML = country;
-    weatherIcon.innerHTML = `<img src="${weather[0].icon}" />`;
-    weatherDesc.innerHTML = weather[0].description;
-    temperature.innerHTML = temp.toFixed(1);
-}
-
 // change from C to F
 function CtoF(Celsius) {
     return Celsius * 9 / 5 + 32;
@@ -58,10 +49,18 @@ function toggleTemp() {
     }
 }
 
+// update the data from API
+function updateDataToUI(location, weather, temp, country) {
+    loc.innerHTML = location;
+    cntry.innerHTML = country;
+    weatherIcon.innerHTML = `<img src="${weather[0].icon}" />`;
+    weatherDesc.innerHTML = weather[0].description;
+    temperature.innerHTML = (temp * 9 / 5 + 32).toFixed(1);
+}
+
 // toggle the temperature scale
 tempType.addEventListener("click", toggleTemp);
 
 window.onload = function() {
     getLocation();
-    toggleTemp();
 };

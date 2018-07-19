@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="assets\styling.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">
+            <div class="title">
+                <h1 id="title">Survey</h1>
+                <p id="description">Survey form</p>
+            </div>
+            <form id="survey-form" action="/url-where-you-want-to-submit-form-data">
+                <div>
+                    <label>Name:
+                        <input id="name" type="text" placeholder="Full Name" required>
+                    </label>
+                </div>
+                <div>
+                    <label>Email:
+                        <input id="email" type="text" placeholder="Email" title="" pattern="" required>
+                    </label>
+                </div>
+                <div>
+                    <label>Age:
+                        <input id="number" type="number" step="1" min="0" max="120" placeholder="Age">
+                    </label>
+                </div>
+                <div>
+                    <label>Favorite Harry Potter Book:</label>
+                    <select id="dropdown">
+                        <option value="Sorcerer's Stone">Harry Potter and the Sorcerer's Stone</option>
+                        <option value="Chamber of Secrets">Harry Potter and the Chamber of Secrets</option>
+                        <option value="Prisoner of Azkaban">Harry Potter and the Prisoner of Azkaban</option>
+                        <option value="Goblet of Fire">Harry Potter and the Goblet of Fire</option>
+                        <option value="Order of the Phoenix">Harry Potter and the Order of the Phoenix</option>
+                        <option value="Half Blood Prince">Harry Potter and the Half Blood Prince</option>
+                        <option value="Deathly Hallows">Harry Potter and the Deathly Hallows</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Do you prefer the Harry Potter Books or Movies?</label>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="radio" id="EntertainmentChoice" name="Entertainment" value="Books">Books
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" id="EntertainmentChoice" name="Entertainment" value="Movies">Movies
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <label>Harry Potter Books Read</label>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="Sorcerer's Stone">Harry Potter and the Sorcerer's Stone
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="Chamber of Secrets">Harry Potter and the Chamber of Secrets
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="Prisoner of Azkaban">Harry Potter and the Prisoner of Azkaban
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="Goblet of Fire">Harry Potter and the Goblet of Fire
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="Order of the Phoenix">Harry Potter and the Order of the Phoenix
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="Half Blood Prince">Harry Potter and the Half Blood Prince
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="Deathly Hallows">Harry Potter and the Deathly Hallows
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <textarea name="comment">Enter text here...</textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Submit Responses">
+                </div>
+
+            </form>
+        </div>
+        <div class="site-author">
+            <p>Kelsie Stevenson</p>
+        </div>
+    </div>
+</body>
+</html>

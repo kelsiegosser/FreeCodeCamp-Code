@@ -1,0 +1,49 @@
+/*****************************/
+/**********Main***************/
+/*****************************/
+
+* {
+    font-family: arial;
+}
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+img {
+    justify-content: center;
+    width: 100px;
+}
+
+/*Container*/
+.container {
+    flex: 1 0 auto;
+    padding: 2em;
+    margin: 5em;
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Items within container*/
+.item {
+    text-align: center;
+    min-width: 300px;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border: 1px solid lightgray;
+}
+
+
+/*****************************/
+/*******Site Author***********/
+/*****************************/
+
+.site-author {
+    font-size: 12px;
+    color: silver;
+}

@@ -28,17 +28,35 @@ img {
     align-self: center;
     align-items: center;
     border: 1px solid lightgray;
-    max-width: 500px;
+    /* min-width: 50vw; */
 }
 
 /*Items within container*/
 .item {
-    text-align: left;
-    min-width: 300px;
+    text-align: center;
+    /* align-items: center; */
     margin: 10px 10px;
     padding: 10px 10px;
+    display: flex;
+    flex-flow: row wrap;
 }
 
+.item-left {
+    text-align: right;
+    margin: 5px 10px 5px 0px;
+    width: 200px;
+    align-self:flex-start;
+}
+
+.item-right {
+    text-align: left;
+    margin: 5px 0px 5px 2px;
+    align-self:flex-start;
+}
+
+/*****************************/
+/*******List Items************/
+/*****************************/
 
 /*****************************/
 /*******Site Author***********/

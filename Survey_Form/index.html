@@ -16,86 +16,107 @@
         </div>
         <form id="survey-form" action="/url-where-you-want-to-submit-form-data">
             <div class="item">
-                <label>Name:
+                <div class="item-left">
+                    <label>Name:</label>
+                </div>
+                <div class="item-right">
                     <input id="name" type="text" placeholder="Full Name" required>
-                </label>
+                </div>
             </div>
             <div class="item">
-                <label>Email:
+                <div class="item-left">
+                    <label>Email:</label>
+                </div>
+                <div class="item-right">
                     <input id="email" type="text" placeholder="Email" title="" pattern="" required>
-                </label>
+                </div>
             </div>
             <div class="item">
-                <label>Age:
+                <div class="item-left">
+                    <label>Age:</label>
+                </div>
+                <div class="item-right">
                     <input id="number" type="number" step="1" min="0" max="120" placeholder="Age">
-                </label>
+                </div>
             </div>
             <div class="item">
-                <label>Favorite Harry Potter Book:</label>
-                <select id="dropdown">
-                    <option value="Sorcerer's Stone">Harry Potter and the Sorcerer's Stone</option>
-                    <option value="Chamber of Secrets">Harry Potter and the Chamber of Secrets</option>
-                    <option value="Prisoner of Azkaban">Harry Potter and the Prisoner of Azkaban</option>
-                    <option value="Goblet of Fire">Harry Potter and the Goblet of Fire</option>
-                    <option value="Order of the Phoenix">Harry Potter and the Order of the Phoenix</option>
-                    <option value="Half Blood Prince">Harry Potter and the Half Blood Prince</option>
-                    <option value="Deathly Hallows">Harry Potter and the Deathly Hallows</option>
-                </select>
+                <div class="item-left">
+                    <label>Favorite Harry Potter Book:</label>
+                </div>
+                <div class="item-right">
+                    <select id="dropdown">
+                        <option value="Sorcerer's Stone">Harry Potter and the Sorcerer's Stone</option>
+                        <option value="Chamber of Secrets">Harry Potter and the Chamber of Secrets</option>
+                        <option value="Prisoner of Azkaban">Harry Potter and the Prisoner of Azkaban</option>
+                        <option value="Goblet of Fire">Harry Potter and the Goblet of Fire</option>
+                        <option value="Order of the Phoenix">Harry Potter and the Order of the Phoenix</option>
+                        <option value="Half Blood Prince">Harry Potter and the Half Blood Prince</option>
+                        <option value="Deathly Hallows">Harry Potter and the Deathly Hallows</option>
+                    </select>
+                </div>
             </div>
             <div class="item">
-                <label>Do you prefer the Harry Potter Books or Movies?</label>
-                <ul>
-                    <li>
-                        <label>
-                            <input type="radio" id="EntertainmentChoice" name="Entertainment" value="Books">Books
-                        </label>
-                    </li>
-                    <li>
-                        <label>
-                            <input type="radio" id="EntertainmentChoice" name="Entertainment" value="Movies">Movies
-                        </label>
-                    </li>
-                </ul>
+                <div class="item-left">
+                    <label>Do you prefer the Harry Potter Books or Movies?</label>
+                </div>
+                <div class="item-right">
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="radio" id="EntertainmentChoice" name="Entertainment" value="Books">Books
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" id="EntertainmentChoice" name="Entertainment" value="Movies">Movies
+                            </label>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="item">
-                <label>Harry Potter Books Read</label>
-                <ul>
-                    <li>
-                        <label>
-                            <input type="checkbox" value="Sorcerer's Stone">Harry Potter and the Sorcerer's Stone
-                        </label>
-                    </li>
-                    <li>
-                        <label>
-                            <input type="checkbox" value="Chamber of Secrets">Harry Potter and the Chamber of Secrets
-                        </label>
-                    </li>
-                    <li>
-                        <label>
-                            <input type="checkbox" value="Prisoner of Azkaban">Harry Potter and the Prisoner of Azkaban
-                        </label>
-                    </li>
-                    <li>
-                        <label>
-                            <input type="checkbox" value="Goblet of Fire">Harry Potter and the Goblet of Fire
-                        </label>
-                    </li>
-                    <li>
-                        <label>
-                            <input type="checkbox" value="Order of the Phoenix">Harry Potter and the Order of the Phoenix
-                        </label>
-                    </li>
-                    <li>
-                        <label>
-                            <input type="checkbox" value="Half Blood Prince">Harry Potter and the Half Blood Prince
-                        </label>
-                    </li>
-                    <li>
-                        <label>
-                            <input type="checkbox" value="Deathly Hallows">Harry Potter and the Deathly Hallows
-                        </label>
-                    </li>
-                </ul>
+                <div class="item-left">
+                    <label>Harry Potter Books Read:</label>
+                </div>
+                <div class="item-right">
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="Sorcerer's Stone">Harry Potter and the Sorcerer's Stone
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="Chamber of Secrets">Harry Potter and the Chamber of Secrets
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="Prisoner of Azkaban">Harry Potter and the Prisoner of Azkaban
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="Goblet of Fire">Harry Potter and the Goblet of Fire
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="Order of the Phoenix">Harry Potter and the Order of the Phoenix
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="Half Blood Prince">Harry Potter and the Half Blood Prince
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="Deathly Hallows">Harry Potter and the Deathly Hallows
+                            </label>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="item">
                 <textarea name="comment">Enter text here...</textarea>

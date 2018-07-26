@@ -1,0 +1,155 @@
+/*****************************/
+/**********Main***************/
+/*****************************/
+
+* {
+    font-family: arial;
+}
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+    margin: 0;
+    /*background: black;
+    background-image: url("assets\images\Harry_Potter_Floating_Candles.jpg");*/
+    background: url(images/Harry_Potter_Floating_Candles.jpg) top center repeat-x,
+    black;
+    background-attachment: fixed;
+     /* background-size: 100vw 20vh; */
+}
+img {
+    justify-content: center;
+    width: 100px;
+}
+
+/*Container*/
+.container {
+    flex: 1 0 auto;
+    padding: 2em;
+    margin: 2em;
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-top: 10px solid #C1861F;
+    background-color: white;
+    /* min-width: 50vw; */
+}
+
+/*Items within container*/
+.item {
+    text-align: center;
+    align-items: center;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.item-left {
+    text-align: right;
+    margin: 5px 10px 5px 0px;
+    width: 200px;
+    align-self:flex-start;
+}
+
+.item-right {
+    text-align: left;
+    margin: 5px 0px 5px 2px;
+    align-self:flex-start;
+}
+
+/*****************************/
+/*******Title & Description***/
+/*****************************/
+
+#title {
+    margin: .5em 0em .1em 0em;
+    color: #ae0001;
+    text-align: center;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 30pt;
+}
+
+#description {
+    margin: .5em;
+    text-align: center;
+    font-size: 11pt;
+}
+
+/*****************************/
+/*******Form IDs**************/
+/*****************************/
+
+#survey-form {
+    font-size: 12pt;
+}
+
+#name {
+
+}
+
+#email {
+
+}
+
+#number {
+
+}
+
+#dropdown {
+    padding: 2px 0px;
+}
+
+/*****************************/
+/*******Other Items***********/
+/*****************************/
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+input {
+    padding: 2px 0px;
+}
+
+textarea {
+    min-width: 300px;
+    min-height: 100px;
+}
+
+#submit-btn-container {
+    justify-content: center;
+}
+
+#submit-btn {
+    border-radius: 4px;
+    border: 0px solid;
+    padding: 10px 20px;
+    font-size: 12pt;
+    background-color: #740001;
+    color: whitesmoke;
+}
+
+#submit-btn:hover {
+    background-color: #ae0001;
+    color: white;
+}
+
+/*****************************/
+/*******Site Author***********/
+/*****************************/
+
+.site-author {
+    font-size: 12px;
+    color: silver;
+}

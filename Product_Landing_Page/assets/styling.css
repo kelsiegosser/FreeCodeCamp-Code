@@ -64,6 +64,7 @@ img {
     width: 100%;
     overflow: hidden;
     background-color: darkorchid;
+    z-index: 10;
 }
 
 .nav-link {
@@ -116,6 +117,19 @@ ul li {
     font-size: 1.5em;
     font-weight: lighter;
     color: darkorchid;
+}
+
+.product-card p {
+    color: grey;
+}
+
+.product-card a, .product-card a:visited {
+    color: #70a970;
+    text-decoration: none;
+}
+
+.product-card a:hover, .product-card a:active {
+    color: #568f56;
 }
 
 .product-img {

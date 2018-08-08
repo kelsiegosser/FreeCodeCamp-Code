@@ -1,0 +1,138 @@
+/*****************************/
+/**********Main***************/
+/*****************************/
+
+* {
+    font-family: arial;
+}
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    max-width:100%;
+}
+img {
+    justify-content: center;
+    width: 100px;
+}
+
+/*Container*/
+.container {
+    flex: 1 0 auto;
+    padding: 2em;
+    margin: 6em 2em 2em 2em;
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    border: 1px solid lightgray;
+    background-color: white;
+    /* min-width: 50vw; */
+}
+
+/*Items within container*/
+.item {
+    text-align: center;
+    align-items: center;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid lightgray;
+}
+
+/*****************************/
+/*******Nav Bar***************/
+/*****************************/
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    position: fixed;
+    flex-shrink: 0;
+    display: inline-flex;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: darkorchid;
+}
+
+.nav-link {
+    align-self: center;
+    padding: 0px 15px;
+}
+
+.nav-link a, .nav-link a:visited {
+    color: honeydew;
+    font-size: 11pt;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform:lowercase;
+}
+
+.nav-link a:hover, .nav-link a:active {
+    text-decoration: none;
+    color: darkseagreen;
+    font-weight: bolder;
+}
+
+
+/*****************************/
+/*******Other Items***********/
+/*****************************/
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+#video {
+    text-align: center;
+     width: 320px;
+     height: 240px;
+}
+
+.product-card {
+    flex-flow: column nowrap;
+    text-align: left;
+    min-width: 300px;
+}
+
+.product-card h1 {
+    font-size: 1.5em;
+    font-weight: lighter;
+    color: darkorchid;
+}
+
+.product-img {
+    text-align: center;
+    padding: 5px;
+    border-bottom: solid 1px lightgray;
+    min-width: 290px;
+}
+
+
+/*****************************/
+/*******Site Author***********/
+/*****************************/
+
+.site-author {
+    flex-flow: row nowrap;
+    text-align: center;
+    font-size: 12px;
+    color: silver;
+}

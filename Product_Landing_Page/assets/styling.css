@@ -18,45 +18,25 @@ img {
     width: 100px;
 }
 
-/*Container*/
-.container {
-    flex: 1 0 auto;
-    padding: 2em;
-    margin: 6em 2em 2em 2em;
-    list-style: none;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-self: center;
-    align-items: center;
-    border: 1px solid lightgray;
-    background-color: white;
-    /* min-width: 50vw; */
-}
-
-/*Items within container*/
-.item {
-    text-align: center;
-    align-items: center;
-    margin: 10px 10px;
-    padding: 10px 10px;
-    display: flex;
-    flex-flow: row wrap;
-    border: 1px solid lightgray;
-}
 
 /*****************************/
 /*******Nav Bar***************/
 /*****************************/
 
+#header-img {
+    display: flex;
+    position: fixed;
+    display: inline-flex;
+    z-index: 15;
+    margin: 1em;
+}
 
 .navbar {
     display: flex;
     align-items: center;
     padding: 20px 0px;
-    flex-direction: row;
+    flex-flow: row nowrap;
     justify-content: flex-end;
-    flex-wrap: nowrap;
     position: fixed;
     flex-shrink: 0;
     display: inline-flex;
@@ -66,6 +46,10 @@ img {
     background-color: darkorchid;
     z-index: 10;
 }
+
+/* .nav-link-icon {
+  display: none;
+} */
 
 .nav-link {
     align-self: center;
@@ -86,10 +70,59 @@ img {
     font-weight: bolder;
 }
 
+@media screen and (max-width: 600px) {
+    .nav-link a, .nav-link a:visited {
+        font-size: 10pt;
+        font-weight: normal;
+    }
+    .nav-link a:hover, .nav-link a:active {
+        text-decoration: none;
+        color: darkseagreen;
+        font-weight: normal;
+    }
+}
 
 /*****************************/
 /*******Other Items***********/
 /*****************************/
+/*Container*/
+.container {
+    flex: 1 0 auto;
+    margin: 6em 2em 2em 2em;
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    border: 1px solid lightgray;
+    background-color: white;
+    min-width: 67vw;
+}
+
+/*Items within container*/
+.item {
+    text-align: center;
+    align-items: center;
+    margin: 20px 10px;
+    padding: 10px 10px;
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid lightgray;
+}
+
+.container-header {
+    background: linear-gradient(#ebd6f5,white);
+    padding: 1em 0 2em 0;
+    width: 100%;
+}
+
+.container-header h1, .container-header p {
+    font-weight: lighter;
+    color: darkslategray;
+    padding: 0 20px 0 20px;
+}
+
 
 ul {
     padding: 0px;
@@ -103,8 +136,8 @@ ul li {
 
 #video {
     text-align: center;
-     width: 320px;
-     height: 240px;
+     width: 340px;
+     height: 300px;
 }
 
 .product-card {
@@ -136,9 +169,59 @@ ul li {
     text-align: center;
     padding: 5px;
     border-bottom: solid 1px lightgray;
-    min-width: 290px;
+    min-width: 200px;
 }
 
+.product-img img {
+    width: 50%;
+}
+
+/*****************************/
+/*******Form******************/
+/*****************************/
+
+.form {
+    flex-flow: column nowrap;
+    text-align: left;
+    min-width: 300px;
+    max-width: 500px;
+    margin: 4em 0em;
+    padding: 1em;
+    border-top: 1px solid lightgray;
+}
+
+.form-input {
+    flex-flow: column nowrap;
+}
+
+.form-input label {
+    font-size: 11pt;
+    margin-right: 1em;
+    text-align: right;
+    width: 100%;
+}
+
+.form-input input {
+    padding: 10px 4px;
+    width: 100%;
+}
+
+.form-submit {
+    text-align: right;
+}
+
+.form-submit input {
+    background-color: #70a970;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    font-size: 12pt;
+}
+
+.form-submit input:hover, .form-submit input:active {
+    background-color: #568f56;
+}
 
 /*****************************/
 /*******Site Author***********/

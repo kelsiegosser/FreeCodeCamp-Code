@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="assets\styling.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Jolly+Lodger|Merienda|Yeon+Sung" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="assets\toggle.js"></script>
 </head>
 
 <body>
     <header id="header">
         <img id="header-img" src="assets\images\logo.png" alt="logo">
-        <nav id="nav-bar" >
+        <nav id="nav-bar">
             <ul class="navbar">
                 <li class="nav-link"><a href="#balsamiq">Balsamiq</a></li>
                 <li class="nav-link"><a href="#invision">Invision</a></li>
@@ -21,7 +23,12 @@
         </nav>
     </header>
     <div class="container">
+        <div class="container-header">
+            <h1>Wireframing Products</h1>
+            <p>description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nascetur ridiculus mus mauris vitae.</p>
+        </div>
         <div id="video">
+            <h2>Video</h2>
             <video controls>
                 <source src="movie.mp4" type="video/mp4">
                 <source src="movie.ogg" type="video/ogg">
@@ -55,17 +62,35 @@
                 </div>
                 <h1>MockFlow</h1>
                 <p>Description for MockFlow</p>
-                <a href="https://mockflow.com/apps/wireframepro/">MockFlow</a>
+                <a href="https://mockflow.com/apps/wireframepro/">mockflow.com</a>
             </div>
         </section>
         <div class="form">
             <form id="form" action="https://www.freecodecamp.com/email-submit">
-                <label>Email:</label>
+                <h1>Sign Up</h1>
+                <p>If you would like to learn more about wireframing, please submit your information below.</p>
                 <br>
-                <input id="email" type="text" placeholder="Email" required>
+                <div class="form-input">
+                    <label>First Name</label>
+                    <input id="first-name" type="text" placeholder="First Name" required>
+                </div>
                 <br>
                 <br>
-                <input type="submit" value="Submit">
+                <div class="form-input">
+                    <label>Last Name</label>
+                    <input id="last-name" type="text" placeholder="Last Name" required>
+                </div>
+                <br>
+                <br>
+                <div class="form-input">
+                    <label>Email</label>
+                    <input id="email" type="text" placeholder="Email" required>
+                </div>
+                <br>
+                <br>
+                <div class="form-submit">
+                    <input type="submit" value="Submit">
+                </div>
             </form>
         </div>
     </div>

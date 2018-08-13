@@ -61,7 +61,7 @@ h1, h2 {
     padding: 0px 15px;
 }
 
-.nav-link a, .nav-link a:visited {
+.nav-link, .nav-link:visited {
     color: honeydew;
     font-size: 11pt;
     font-weight: bold;
@@ -69,18 +69,18 @@ h1, h2 {
     text-transform:lowercase;
 }
 
-.nav-link a:hover, .nav-link a:active {
+.nav-link:hover, .nav-link:active {
     text-decoration: none;
     color: darkseagreen;
     font-weight: bolder;
 }
 
 @media screen and (max-width: 600px) {
-    .nav-link a, .nav-link a:visited {
+    .nav-link, .nav-link:visited {
         font-size: 10pt;
         font-weight: normal;
     }
-    .nav-link a:hover, .nav-link a:active {
+    .nav-link:hover, .nav-link:active {
         text-decoration: none;
         color: darkseagreen;
         font-weight: normal;

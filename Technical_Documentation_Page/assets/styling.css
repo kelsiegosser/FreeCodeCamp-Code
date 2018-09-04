@@ -2,6 +2,14 @@
 /**********Main***************/
 /*****************************/
 
+/*COLORS
+Light Shade: f9f8f8
+Light Accent: 88abd6
+Main Brand Color: tomato ff6347
+Dark Accent: e19285 (not dark)
+Dark Shades: 2B4273
+*/
+
 * {
     font-family: arial;
 }
@@ -13,51 +21,109 @@ body {
     width: 100vw;
     height: 100vh;
     max-width:100%;
-} */
+    background: #eeefef; /*#F9F8F8;*/
+}
+
+section {
+    background-color: white;
+    border: 1px solid #E2E2E2;
+    border-radius: 6px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.main-section header {
+    color: tomato;
+}
 
 h1, h2 {
     font-weight: lighter;
-    color: darkslategray;
+    color: #DC9B92;
     padding: 0 20px 0 20px;
 }
 
-header nav {
-    /* flex-flow: column nowrap; */
-    width: 20%;
+.main-header {
+    flex-flow: row wrap;
+    width: 15%;
+    background: #2B4273;
+    /*position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    height: 100%*/
 }
 
 main {
-    /* flex-flow: column nowrap; */
-    width: 80%;
+    flex-flow: row wrap;
+    width: 85%;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+header {
+    font-size: 26px;
+    font-weight: lighter;
 }
 
 /*****************************/
 /*******Nav Bar***************/
 /*****************************/
 
-.navbar {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: flex-start;
-    background: green;
+.nav-header {
+    padding: 20px;
+    font-size: 24px;
+    color: white;
 }
 
-.nav-link {
-    flex: none;
-    align-self: center;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+ul.navbar {
+    margin: 0;
+    padding: 0px 10px;
+    list-style: none;
+    border-top: 1px solid whitesmoke;
+}
+
+li {
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid whitesmoke;
+}
+
+a.nav-link {
+    font-size: 14px;
+    color: #a7c8f0; /*#88ABD6;*/
+    text-decoration: none;
+    padding: 10px;
+}
+
+a.nav-link:hover, a.nav-link:active {
+    color: white;
 }
 
 /*****************************/
 /*******Other Items***********/
 /*****************************/
-code {
-    background-color: #eee;
+.inline-code {
+    background: black;
+    color: white;
     border-radius: 3px;
-    font-family: courier, monospace;
-    padding: 0 3px;
+    font-family: arial;
+    padding: 1px 4px;
 }
 
-
+/* .code-block {
+    background-color: #fff;
+    border: none;
+    border-radius: 2px;
+    font-family: courier, monospace;
+    padding: 0 3px;
+} */
 
 
 /*****************************/
@@ -69,4 +135,6 @@ code {
     text-align: center;
     font-size: 12px;
     color: silver;
+    margin: 20px;
+    padding: 10px;
 }

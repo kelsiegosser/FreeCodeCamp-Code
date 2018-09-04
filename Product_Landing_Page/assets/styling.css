@@ -1,0 +1,260 @@
+/*****************************/
+/**********Main***************/
+/*****************************/
+
+* {
+    font-family: arial;
+}
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    max-width:100%;
+}
+img {
+    justify-content: center;
+    width: 100px;
+}
+
+h1, h2 {
+    font-weight: lighter;
+    color: darkslategray;
+    padding: 0 20px 0 20px;
+}
+
+/*****************************/
+/*******Nav Bar***************/
+/*****************************/
+#header {
+    display: flex;
+    position: fixed;
+    top: 0;
+}
+
+#header-img {
+    display: flex;
+    position: fixed;
+    display: inline-flex;
+    z-index: 15;
+    margin: 1em;
+}
+
+.navbar {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    flex-shrink: 0;
+    position: fixed;
+    align-items: center;
+    padding: 18px 0px;
+    justify-content: flex-end;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: darkorchid;
+    z-index: 10;
+}
+
+/* .nav-link-icon {
+  display: none;
+} */
+
+.nav-link {
+    align-self: center;
+    padding: 0px 15px;
+}
+
+.nav-link, .nav-link:visited {
+    color: honeydew;
+    font-size: 11pt;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform:lowercase;
+}
+
+.nav-link:hover, .nav-link:active {
+    text-decoration: none;
+    color: darkseagreen;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-link, .nav-link:visited {
+        font-size: 10pt;
+        font-weight: normal;
+    }
+    .nav-link:hover, .nav-link:active {
+        text-decoration: none;
+        color: darkseagreen;
+        font-weight: normal;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    p {
+         font-size: 10pt;
+    }
+}
+
+/*****************************/
+/*******Other Items***********/
+/*****************************/
+/*Container*/
+.container {
+    flex: 1 0 auto;
+    margin: 6em 2em 2em 2em;
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    border: 1px solid lightgray;
+    background-color: white;
+    min-width: 67vw;
+}
+
+/*Items within container*/
+.item {
+    text-align: center;
+    align-items: center;
+    margin: 20px 10px;
+    padding: 10px 10px;
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid lightgray;
+}
+
+.container-header {
+    background: linear-gradient(#ebd6f5,white);
+    padding: 1em 0 2em 0;
+    width: 100%;
+}
+
+.container-header p {
+    font-weight: lighter;
+    color: darkslategray;
+    padding: 0 20px 0 20px;
+}
+
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.video {
+    margin: 1em 0;
+}
+
+.video p {
+    color: slategray;
+    font-size: 10pt;
+    text-align: right;
+}
+
+video {
+    text-align: center;
+     width: 470px;
+     height: 360px;
+}
+
+.product-card {
+    flex-flow: column nowrap;
+    text-align: left;
+    min-width: 300px;
+}
+
+.product-card h1 {
+    font-size: 1.5em;
+    font-weight: lighter;
+    color: darkorchid;
+}
+
+.product-card p {
+    color: grey;
+}
+
+.product-card a, .product-card a:visited {
+    color: #70a970;
+    text-decoration: none;
+}
+
+.product-card a:hover, .product-card a:active {
+    color: #568f56;
+}
+
+.product-img {
+    text-align: center;
+    padding: 5px;
+    border-bottom: solid 1px lightgray;
+    min-width: 200px;
+}
+
+.product-img img {
+    width: 50%;
+}
+
+/*****************************/
+/*******Form******************/
+/*****************************/
+
+.form {
+    flex-flow: column nowrap;
+    text-align: left;
+    min-width: 300px;
+    max-width: 500px;
+    margin: 4em 0em;
+    padding: 1em;
+    border-top: 1px solid lightgray;
+}
+
+.form-input {
+    flex-flow: column nowrap;
+}
+
+.form-input label {
+    font-size: 11pt;
+    margin-right: 1em;
+    text-align: right;
+    width: 100%;
+}
+
+.form-input input {
+    padding: 10px 4px;
+    width: 100%;
+}
+
+.form-submit {
+    text-align: right;
+}
+
+.form-submit input {
+    background-color: #70a970;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    font-size: 12pt;
+}
+
+.form-submit input:hover, .form-submit input:active {
+    background-color: #568f56;
+}
+
+/*****************************/
+/*******Site Author***********/
+/*****************************/
+
+.site-author {
+    flex-flow: row nowrap;
+    text-align: center;
+    font-size: 12px;
+    color: silver;
+}

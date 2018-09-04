@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Web Design Technical Documentation</title>
+    <link rel="stylesheet" href="assets\styling.css">
+    <script src="assets\test.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <header>Web Design Technical Documentation</header>
+            <ul class="navbar">
+                <li><a class="nav-link" href="#Responsive_Web_Design_Overview">Responsive Web Design Overview</a></li>
+                <li><a class="nav-link" href="#Basic_HTML_&_HTML5">Basic HTML & HTML5</a></li>
+                <li><a class="nav-link" href="#Basic_CSS">Basic CSS</a></li>
+                <li><a class="nav-link" href="#CSS_Flexbox">CSS Flexbox</a></li>
+                <li><a class="nav-link" href="#JavaScript">JavaScript</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-doc" class="container">
+        <section class="main-section" id="Responsive_Web_Design_Overview">
+            <header>Responsive Web Design Overview</header>
+            <p>Responsive web design is the concept of designing web pages that adapt to different screen sizes. It commonly involves the use of different layouts, font sizes, and placstrongent of navigation menus.</p>
+            <p>In order to create a responsive web page, CSS is commonly used to style your HTML elstrongents.</p>
+        </section>
+        <section class="main-section" id="Basic_HTML_&_HTML5">
+            <header>Basic HTML & HTML5</header>
+            <p>HTML, or HyperText Markup Language, is the standard markup language for describing the structure of websites.</p>
+            <p>HTML elstrongents are the syntax to mark up a page. They help organize and give information about the page’s content to a browser. Elstrongents usually have opening and closing tags that surround and give meaning to content (although some elstrongents are self-closing). For example, there are different tags to place around text to show whether it’s a heading, a paragraph, or a list, for instance:</p>
+            <code>
+                <h1>This is a first level header (six evels of headings exist in HTML)</h1>
+                <p>This is a paragraph that has some <strong>strongphasized</strong> words.</p>
+            </code>
+            <p>HTML5 is the latest version, or specification, of HTML. The World Wide Web Consortium (W3C) is the organization responsible for developing standards for the World Wide Web, including those for HTML. As web pages and web applications grow more complex, W3C runs the process to update HTML’s standards.</p>
+            <h2>A simple example of an HTML Document</h2>
+            <code>
+                <!DOCTYPE html>
+                <html>
+                <head>
+                  <title>Page Title</title>
+                </head>
+                <body>
+
+                  <h1>My First Heading</h1>
+                  <p>My first paragraph.</p>
+
+                </body>
+                </html>
+            </code>
+        </section>
+        <section class="main-section" id="Basic_CSS">
+            <header>Basic CSS</header>
+            <p>CSS stands for Cascading Style Sheets. It was first invented in 1996, and is now a standard feature of all major web browsers.</p>
+            <p>CSS allows for developers to control how web pages look by “styling” the HTML structure of that page.</p>
+        </section>
+        <section class="main-section" id="CSS_Flexbox">
+            <header>CSS Flexbox</header>
+            <p>The Flexbox model provides for an efficient way to layout, align, and distribute space among elstrongents within your document — even when the viewport and the size of your elstrongents is dynamic or unknown.</p>
+            <h2>Some Properties for Flex Container</h2>
+                <ul>
+                    <li><strong>display</strong>: Placing the CSS property <code>display: flex;</code> on an elstrongent allows you to use other flex properties to build a responsive page.</li>
+                    <li><strong>flex-direction</strong>: Adding <code>display: flex</code> to an elstrongent turns it into a flex container. This makes it possible to align any children of that elstrongent into rows or columns. You do this by adding the <code>flex-direction</code> property to the parent itstrong and setting it to row or column. Creating a row will align the children horizontally, and creating a column will align the children vertically.</li>
+                    <li><strong>flex-wrap</strong>: The <code>flex-wrap</code> property tells CSS to wrap itstrongs. This means extra itstrongs move into a new row or column. The break point of where the wrapping happens depends on the size of the itstrongs and the size of the container.</li>
+                </ul>
+            <h2>Some Properties for Flex Itstrongs</h2>
+                <ul>
+                    <li><strong>order</strong>: The <code>order</code> property is used to tell CSS the order of how flex itstrongs appear in the flex container. By default, itstrongs will appear in the same order they come in the source HTML. The property takes numbers as values, and negative numbers can be used.</li>
+                    <li><strong>align-self</strong>: This property allows you to adjust each itstrong's alignment individually, instead of setting thstrong all at once. This is useful since other common adjustment techniques using the CSS properties <code>float</code>, <code>clear</code>, and <code>vertical-align</code> do not work on flex itstrongs.</li>
+                </ul>
+        </section>
+        <section class="main-section" id="JavaScript">
+            <header>JavaScript</header>
+            <p>JavaScript is the most widely used scripting language on Earth. And it has the largest library ecosystem of any programming language.</p>
+            <p>JavaScript is the core language of the web, and the only programming language that can run in all major web browsers.</p>
+        </section>
+    </main>
+    <div class="site-author">
+        <p>Kelsie Stevenson</p>
+    </div>
+</body>
+</html>

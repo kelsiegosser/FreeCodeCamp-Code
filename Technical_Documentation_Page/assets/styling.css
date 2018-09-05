@@ -2,14 +2,6 @@
 /**********Main***************/
 /*****************************/
 
-/*COLORS
-Light Shade: f9f8f8
-Light Accent: 88abd6
-Main Brand Color: tomato ff6347
-Dark Accent: e19285 (not dark)
-Dark Shades: 2B4273
-*/
-
 * {
     font-family: arial;
 }
@@ -21,7 +13,7 @@ body {
     width: 100vw;
     height: 100vh;
     max-width:100%;
-    background: #eeefef; /*#F9F8F8;*/
+    background: #eeefef;
 }
 
 section {
@@ -97,7 +89,7 @@ li {
 
 a.nav-link {
     font-size: 14px;
-    color: #a7c8f0; /*#88ABD6;*/
+    color: #a7c8f0;
     text-decoration: none;
     padding: 10px;
 }
@@ -117,13 +109,6 @@ a.nav-link:hover, a.nav-link:active {
     padding: 1px 4px;
 }
 
-/* .code-block {
-    background-color: #fff;
-    border: none;
-    border-radius: 2px;
-    font-family: courier, monospace;
-    padding: 0 3px;
-} */
 
 
 /*****************************/

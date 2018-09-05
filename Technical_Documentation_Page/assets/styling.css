@@ -57,7 +57,27 @@ header {
     height: 100%
 }
 
+@media only screen and (max-width: 768px) {
+    /* For mobile phones*/
+    body {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        max-width:100%;
+    }
 
+    main {
+        margin: 0;
+        width: 100%;
+    }
+
+    .main-header {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
 }
 
 /*****************************/

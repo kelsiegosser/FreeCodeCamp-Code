@@ -33,28 +33,31 @@ h1, h2 {
     color: #DC9B92;
     padding: 0 20px 0 20px;
 }
-
-.main-header {
-    flex-flow: row wrap;
-    width: 15%;
-    background: #2B4273;
-    /*position: fixed;
-    top: 0;
-    left: 0;
-    margin: auto;
-    height: 100%*/
-}
-
 main {
     flex-flow: row wrap;
-    width: 85%;
+    width: 70%;
     margin-top: 20px;
+    margin-left: 15%;
     padding: 10px 20px;
 }
 
 header {
     font-size: 26px;
     font-weight: lighter;
+}
+
+.main-header {
+    flex-flow: row wrap;
+    width: 15%;
+    background: #2B4273;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    height: 100%
+}
+
+
 }
 
 /*****************************/
@@ -81,7 +84,7 @@ ul.navbar {
     border-top: 1px solid whitesmoke;
 }
 
-li {
+.navbar li {
     padding: 10px 0;
     width: 100%;
     border-bottom: 1px solid whitesmoke;
@@ -95,7 +98,7 @@ a.nav-link {
 }
 
 a.nav-link:hover, a.nav-link:active {
-    color: white;
+    color: tomato;
 }
 
 /*****************************/

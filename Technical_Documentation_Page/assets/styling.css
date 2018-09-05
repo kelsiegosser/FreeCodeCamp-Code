@@ -121,6 +121,7 @@ a.nav-link:hover, a.nav-link:active {
     color: tomato;
 }
 
+
 /*****************************/
 /*******Other Items***********/
 /*****************************/
@@ -132,7 +133,10 @@ a.nav-link:hover, a.nav-link:active {
     padding: 1px 4px;
 }
 
-
+ li {
+    list-style: circle;
+    padding: 6px 0;
+}
 
 /*****************************/
 /*******Site Author***********/

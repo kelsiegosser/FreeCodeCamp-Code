@@ -143,24 +143,23 @@ main {
     height: 80vh;
     background-image: linear-gradient(#FFCC00, #993366);
     background-size: cover;
-    /* clip-path: circle(50%); */
-    position: absolute;
+    position: relative;
     top: 0;
     overflow: hidden;
     border-radius: 50%;
-    border: 10px solid white;
-    /* padding: 3px; */
+    border: 6px solid white;
 }
 
 
 .white-rect {
     background: white;
-    /* z-index: -1; */
+    position: absolute;
+    width: 90%;
 }
 
-.clear-rect {
+/* .clear-rect {
     opacity: 100%;
-}
+} */
 
 .scroll {
     margin: 1em;

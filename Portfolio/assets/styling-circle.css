@@ -143,11 +143,15 @@ main {
     height: 80vh;
     background-image: linear-gradient(#FFCC00, #993366);
     background-size: cover;
-    clip-path: circle(50%);
-    /* border: 3px solid white; */
+    /* clip-path: circle(50%); */
     position: absolute;
-    top: 27px;
+    top: 0;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 10px solid white;
+    /* padding: 3px; */
 }
+
 
 .white-rect {
     background: white;

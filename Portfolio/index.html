@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kelsie's Portfolio</title>
+    <link rel="stylesheet" href="assets\styling.css">
+    <link href="https://fonts.googleapis.com/css?family=Hind|Nunito:300|Rosario" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="assets\test.js"></script>
+</head>
+
+<body>
+    <header class="main-header">
+            <nav id="navbar">
+                <header id="navHeader">kelsie stevenson</header>
+                <div class="nav-links">
+                    <a href="#about">about me</a>
+                    <a href="#projects">projects</a>
+                    <a href="#contact">contact</a>
+                </div>
+            </nav>
+
+            <section id="welcome-section">
+
+                <div id="circle"></div>
+                    <div class="white-rect" style="top: 10%; height: 0.5%"></div>
+
+                    <div class="white-rect" style="top: 19.5%; height: 1%"></div>
+
+                    <div class="clear-rect" style="top: 20%; height: 8%">
+                        <h1>welcome</h1>
+                    </div>
+
+                    <div class="white-rect" style="top: 28.5%; height: 2%"></div>
+
+                    <div class="white-rect" style="top: 37.5%; height: 3%"></div>
+
+                    <div class="white-rect" style="top: 46.5%; height: 4%"></div>
+
+                    <div class="white-rect" style="top: 55.5%; height: 5%"></div>
+
+                    <div class="white-rect" style="top: 64.5%; height: 6.5%"></div>
+
+                    <div class="white-rect" style="top: 74%; height: 7.5%"></div>
+
+                    <div id="scroll">
+                        <p>scroll</p>
+                        <span class="scroll-dot"></span>
+                        <span class="scroll-dot"></span>
+                        <span class="scroll-dot"></span>
+                    </div>
+
+            </section>
+
+    </header>
+    <main>
+
+        <section id="about">
+            <h1>about me</h1>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="assets\images\rawpixel-665349-unsplash.jpg">
+                    <div class="slide-text">
+                        <p>I am a UX Engineer for a Consulting Actuarial Firm where I primarily deal with Healthcare data</p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="assets\images\georgie-cobbs-467923-unsplash.jpg">
+                    <div class="slide-text">Designing dashboards and reports is something that I thoroughly enjoy doing</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="assets\images\Indianapolis_Monument.jpg">
+                    <div class="slide-text">I have lived in Indianapolis for about 5 years</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="assets\images\graduation.jpg">
+                    <div class="slide-text">I went to school at NCSU in Raleigh, NC (Go Pack!)</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="assets\images\Autumn-in-Grand-Rapids-Michigan-607729682_5374x3545-1024x675.jpeg">
+                    <div class="slide-text">I am from Grand Rapids, Michigan and I love to go back to visit</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="assets\images\ananthan-loggi-791745-unsplash.jpg">
+                    <div class="slide-text">Traveling has become a passion of mine since graduating from College</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="assets\images\scott-webb-208667-unsplash.jpg">
+                    <div class="slide-text">I love all plants and animals - except for spiders</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+                <br>
+
+                <div class="slide-dots-container">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                  <span class="dot" onclick="currentSlide(4)"></span>
+                  <span class="dot" onclick="currentSlide(5)"></span>
+                  <span class="dot" onclick="currentSlide(6)"></span>
+                  <span class="dot" onclick="currentSlide(7)"></span>
+                </div>
+
+        </section>
+
+        <section id="projects">
+            <h1>projects</h1>
+            <div  class="tile-container">
+
+                <div class="project-tile">
+                    <img src="assets\images\goran-ivos-343495-unsplash.jpg" alt="Technical Documentation Page">
+                    <h2>Technical Documentation</h2>
+                    <p>Technical documentation of web design basics</p>
+                    <ul>
+                        <li><a href=https://kelsiestevenson.github.io/Technical_Documentation_Page target="_blank">Technical Documentation Page</a></li>
+                        <li><a href="https://github.com/kelsiestevenson/FreeCodeCamp-Code/tree/master/Technical_Documentation_Page">Github</a></li>
+                    </ul>
+                </div>
+
+                <div class="project-tile">
+                    <img src="assets\images\jonas-jacobsson-545909-unsplash.jpg" alt="Tribute Page">
+                    <h2>Tribute Page</h2>
+                    <p>A tribute page dedicated to George R.R. Martin</p>
+                    <ul>
+                        <li><a href="https://codepen.io/kelsiestevenson/full/aJxYdw/" target="_blank">Tribute Page</a></li>
+                        <!-- <li><a href=#></a>Github</li> -->
+                    </ul>
+                </div>
+
+                <div class="project-tile">
+                    <img src="assets\images\todd-steitle-667598-unsplash.jpg" alt="Survey">
+                    <h2>Survey</h2>
+                    <p>A survey to determine how true you're love for Harry Potter really is</p>
+                    <ul>
+                        <li><a href=https://kelsiestevenson.github.io/Survey_Form target="_blank">Survey Form</a></li>
+                        <li><a href="https://github.com/kelsiestevenson/FreeCodeCamp-Code/tree/master/Survey_Form">Github</a></li>
+                    </ul>
+                </div>
+
+                <div class="project-tile">
+                    <img src="assets\images\hal-gatewood-613602-unsplash.jpg" alt="Product Page">
+                    <h2>Product Page</h2>
+                    <p>A product page designed around different wireframing tools</p>
+                    <ul>
+                        <li><a href=https://kelsiestevenson.github.io/Product_Landing_Page target="_blank">Product Page</a></li>
+                        <li><a href="https://github.com/kelsiestevenson/FreeCodeCamp-Code/tree/master/Product_Landing_Page">Github</a></li>
+                    </ul>
+                </div>
+
+                <div class="project-tile">
+                    <img src="assets\images\jason-blackeye-295313-unsplash.jpg" alt="Weather App">
+                    <h2>Weather App</h2>
+                    <p>A very basic weather application for your current location</p>
+                    <ul>
+                        <li><a href=https://kelsiestevenson.github.io/Weather target="_blank">Weather</a></li>
+                        <li><a href="https://github.com/kelsiestevenson/FreeCodeCamp-Code/tree/master/Weather">Github</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1>contact</h1>
+            <div class="links">
+                <a href="https://github.com/kelsiestevenson" target="_blank" id="profile-link"><i class="fab fa-github fa-2x"></i></a>
+                <a href="mailto:kelsierstevenson@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="assets\javascript.js"></script>
+</body>
+</html>

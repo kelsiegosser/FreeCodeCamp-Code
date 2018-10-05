@@ -40,11 +40,13 @@ body {
 h1, h2 {
     text-align: center;
     font-family: 'Arial';
+    font-weight: lighter;
 }
 
 h1 {
-    color: #F2B500;
+    color: #3F3F3F;
     padding-top: 5%;
+    font-weight: lighter;
 }
 
 h2 {
@@ -86,13 +88,15 @@ p {
     flex-flow: row nowrap;
 }
 
-#navHeader {
-    width: 50%;
-    font-size: 32px;
-    color: white;
-    padding: 1em 1em;
-    align-self: center;
-    transition: 0.5s;
+@media only screen and (min-width: 668px) {
+    #navHeader {
+        width: 50%;
+        font-size: 32px;
+        color: white;
+        padding: 1em 1em;
+        align-self: center;
+        transition: 0.5s;
+    }
 }
 
 #navbar .nav-links {
@@ -112,8 +116,30 @@ p {
     align-self: right;
 }
 
-#navbar a:hover {
-    color: #B9B1AE;
+#navbar a:active, #navbar a:hover {
+    background-color: #FFB600;
+}
+
+@media only screen and (max-width: 667px) {
+    #navHeader {
+        width: 40%;
+        font-size: 20px;
+        align-self: center;
+        padding-left: 10px;
+    }
+
+    #navbar .nav-links {
+        width: 60%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #navbar a {
+        font-size: 14px;
+        padding: 1em .5em;
+    }
 }
 
 /*****************************/
@@ -141,42 +167,46 @@ p {
     flex-flow: column nowrap;
 }
 
-#welcome-section h1 {
-    color: white;
-    margin: .2em 0 0 0;
-    padding: 0;
-    font-size: 2.5em;
-    text-align: center;
-    font-family: 'Hind', sans-serif;
-}
 
- #circle {
-    width: 80vh;
-    height: 80vh;
-    background-image: linear-gradient(#FFCC00, #993366);
-    background-size: cover;
-    position: relative;
-    top: 0;
-    overflow: hidden;
-    border-radius: 50%;
-    border: 4px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-    transition-timing-function: ease-in-out;
-}
+@media only screen and (min-width: 668px) {
+    #welcome-section h1 {
+        color: white;
+        margin: .2em 0 0 0;
+        padding: 0;
+        font-size: 2.5em;
+        text-align: center;
+        font-family: 'Hind', sans-serif;
+    }
 
-.white-rect {
-    background: white;
-    position: absolute;
-    width: 90%;
-}
+    #circle {
+        width: 80vh;
+        height: 80vh;
+        background-image: linear-gradient(#FFCC00, #993366);
+        background-size: cover;
+        position: relative;
+        top: 0;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 4px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
 
-.clear-rect {
-    opacity: 100%;
-    position: absolute;
-    width: 90%;
+    .white-rect {
+        background: white;
+        position: absolute;
+        width: 90%;
+    }
+
+    .clear-rect {
+        opacity: 100%;
+        position: absolute;
+        width: 90%;
+    }
+
 }
 
 #scroll {
@@ -206,6 +236,30 @@ p {
     transition-delay: 0.3s
 }
 
+@media only screen and (max-width: 667px) {
+    #welcome-section h1 {
+        color: white;
+        font-size: 36px;
+    }
+
+    #circle {
+        width: 50vh;
+        height: 50vh;
+        background-image: linear-gradient(#FFCC00, #993366);
+        background-size: cover;
+        position: relative;
+        top: 20%;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 4px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+        transition-timing-function: ease-in-out;
+    }
+}
+
 /*****************************/
 /***********Cards*************/
 /*****************************/
@@ -231,7 +285,6 @@ p {
     margin: 16px 0 0 0;
     padding: 0;
     font-size: 20px;
-    font-weight: bold;
 }
 
 .project-tile img {
@@ -282,13 +335,16 @@ p {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 600px;
-  position: relative;
-  margin: auto;
+    width: fit-content;
+    max-width: 600px;
+    position: relative;
+    margin: auto;
 }
 
 .mySlides img {
-    min-width: 100%;
+    width: auto;
+    max-width: 100%;
+    height: auto;
     max-height: 400px;
     border-radius: 4px;
     box-shadow: 0px 5px 8px darkgray;
@@ -296,45 +352,45 @@ p {
 
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.75);
+    background-color: rgba(0,0,0,0.80);
 }
 
 /* Caption text */
 .slide-text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 20px 0 10px 0;
-  margin: 0;
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  text-align: center;
-  background:
-      linear-gradient(
-        rgba(10, 10, 10, 0.00),
-        rgba(10, 10, 10, 0.85)
-      );
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 40px 0 10px 0;
+    margin: 0;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    background:
+        linear-gradient(
+            rgba(80, 80, 80, 0.00),
+            rgba(80, 80, 80, 0.75)
+        );
 }
 
 .slide-text p {
@@ -353,28 +409,28 @@ p {
 }
 
 .dot {
-  cursor: pointer;
-  height: 10px;
-  width: 10px;
-  margin: 0 4px;
-  background-color: #DDD8D8;
-  border-radius: 50%;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 4px;
+    background-color: #DDD8D8;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #A1A1A1;
+    background-color: #878787;
 }
 
 /* Fading animation */
 .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+    .prev, .next,.text {font-size: 11px}
 }
 
 

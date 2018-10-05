@@ -1,5 +1,6 @@
 
 var dotClass = document.getElementsByClassName("scroll-dot");
+const phoneWidth = window.matchMedia( "(max-width: 667px)" );
 
 window.onscroll = function() {
     scrollFunctionHeader()
@@ -18,7 +19,11 @@ function scrollFunctionHeader() {
     } else {
         document.getElementById("navbar").style.height = "10%";
         document.getElementById("navbar").style.zIndex = "0";
-        document.getElementById("navHeader").style.fontSize = "32px";
+        if(phoneWidth.matches) {
+            document.getElementById("navHeader").style.fontSize = "20px";
+        } else {
+            document.getElementById("navHeader").style.fontSize = "32px";
+        }
         document.getElementById("scroll").style.color = "#DDD8D8";
         // document.getElementsByClassName("dot").style.backgroundColor = "#
         for (var i=0; i<dotClass.length; i++) {
